@@ -18,7 +18,7 @@ async def on_message(message):
         await message.channel.send('Démarrage en cours...')
 
 try:
-    client.run("MTEyMTkxMzI4NDI1NDI0MDg2OQ.Gu6ZQo.GNc2UyyUi6ftkVXH38jxWh2mUnGoZXqUysC0-4")
+    client.run(TOKEN)
 except discord.HTTPException as e:
     if e.status == 429:
         print("The Discord servers denied the connection for making too many requests")
